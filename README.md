@@ -5,13 +5,12 @@
 An AWS account with CLI access to the account 
 
 ## Dependencies ## 
-  | Dependency | Version | Notes | --- | Required | 
-  | ------------- | ------------- | --- |
+  | Dependency | Version | Notes | Required | 
+  | ------------- | ------------- | --- | --- |
   | terraform  | 0.14.8   | This will be handled by tfenv if you have it installed | Yes | 
   | kubectl | 1.18.2 | | Yes | 
   | awscli | 2.1.5 | | Yes | 
   | jq | 1.6 | Not a strict requirement, but ease of use thing | No | 
-
 
 ## Usage ## 
 
