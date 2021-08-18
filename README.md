@@ -1,4 +1,4 @@
-### EKS Cluster Rear Demo ###
+### EKS Cluster Rearc Demo ###
 
 ## Prerequisits ## 
 
