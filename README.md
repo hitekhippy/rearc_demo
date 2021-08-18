@@ -36,6 +36,6 @@ Run `kubectl get service/secure-service -o json | jq -r '.status[].ingress[].hos
 a95010904c9b542f687114afa14276b6-1603862992.us-east-2.elb.amazonaws.com`
 
 The output of the command is where navigate to with https:// appended , it's the DNS record of a LoadBalancer so for e.g; 
-[](images/terminal.jpg)
+![](images/terminal.jpg)
 
 This would lead you to https://a95010904c9b542f687114afa14276b6-1603862992.us-east-2.elb.amazonaws.com
