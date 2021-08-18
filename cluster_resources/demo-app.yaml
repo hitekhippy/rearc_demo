@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -29,8 +30,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        # image:  <insert your own ECR repo/image here!> 
-        image: 118550600167.dkr.ecr.us-east-2.amazonaws.com/bar:latest
+        image:  <insert your own ECR repo/image here!> 
         imagePullPolicy: IfNotPresent
         ports:
           - containerPort: 3000

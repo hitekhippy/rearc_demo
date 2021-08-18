@@ -2,7 +2,9 @@
 
 ## Prerequisits ## 
 
-An AWS account with CLI access to the account 
+* An AWS account with CLI access to the account 
+* An ACM cert - it's ARN is necessary in the yaml of the [demo-app.yaml](https://github.com/hitekhippy/rearc_demo/blob/d64e8c0b096809c44fb7987a794069d0b3a7e7fd/cluster_resources/demo-app.yaml#L6)
+* A existing a repo where you can pull the image from. It's needed [here]()
 
 ## Dependencies ## 
   | Dependency | Version | Notes | --- | Required | 
