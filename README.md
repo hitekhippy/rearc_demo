@@ -27,6 +27,15 @@ Check to see if you can see your new cluster using the awscli `aws eks list-clus
 
 # Deploy the image. # 
 
-The `cluster_resource` directory holds yaml files for K8's resources inside the cluster E.G deployments/daemonsets etc. *NOTE* You'll need to insert your own image into the demo-app.yml image field near the bottom. 
+The `cluster_resource` directory holds yaml files for K8's resources inside the cluster E.G deployments/daemonsets etc. *NOTE* You'll need to insert your own ACM/IAM cert (the annotation will accept either) and image into the demo-app.yml image field near the bottom. 
 
 Move into the ./cluster_resource/ directory and run `kubectl apply -f demo-app.yaml` 
+
+# Validation #
+Run `kubectl get service/secure-service -o json | jq -r '.status[].ingress[].hostname'
+a95010904c9b542f687114afa14276b6-1603862992.us-east-2.elb.amazonaws.com`
+
+The output of the command is where navigate to with https:// appended , it's the DNS record of a LoadBalancer so for e.g; 
+[](images/terminal.jpg)
+
+This would lead you to https://a95010904c9b542f687114afa14276b6-1603862992.us-east-2.elb.amazonaws.com
