@@ -4,8 +4,7 @@ kind: Service
 metadata:
   name: secure-service
   annotations:
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:iam::118550600167:server-certificate/TestCert
-spec:
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: <insert_your_arn_here>
   selector:
     app: demo-app
   ports:
